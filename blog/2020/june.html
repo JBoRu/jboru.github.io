@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>June 2020 (Junyi Li)</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Custom icon font-->
+    <link rel="stylesheet" href="../css/fontastic.css">
+    <!-- Google fonts - Open Sans-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <!-- Fancybox-->
+    <link rel="stylesheet" href="../vendor/@fancyapps/fancybox/jquery.fancybox.min.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="../css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="../css/custom.css">
+  </head>
+  <body>
+    <!-- Hero Section-->
+    <section style="background: url(../img/june-2020.jpg); background-size: cover; background-position: center center" class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>Paper Reading Notes ( June 2020 )</h1><!--<a href="june-all.html" target="_blank" class="hero-link">Show All</a>-->
+          </div>
+        </div><a href=".intro" class="continue link-scroll"><i class="fa fa-long-arrow-down"></i> Scroll Down</a>
+      </div>
+    </section>
+    <br><br>
+    <section class="featured-posts no-padding-top">
+      <div class="container">
+        <!-- Post-->
+        <div class="row d-flex align-items-stretch">
+          <div class="text col-lg-12">
+            <div class="text-inner d-flex align-items-center">
+              <div class="content">
+                <header class="post-header">
+                  <!--<div class="category"><a href="#">Business</a><a href="#">Technology</a></div>-->
+				  <a href="https://openreview.net/pdf?id=B1l8L6EtDS" target="_blank">
+                    <b>Self-Adversarial Learning with Comparative Discrimination for Text Generation (ICLR 2020)</b>
+				  </a>
+                </header>
+                <p style="font-size:15px">Wangchunshu Zhou, Tao Ge, Ke Xu, Furu Wei, Ming Zhou</p>
+				<p style="color:black;font-size:17px;text-align:justify">
+				<b>Abstract: </b>Conventional Generative Adversarial Networks (GANs) for text generation tend to
+				have issues of reward sparsity and mode collapse that affect the quality and diversity
+				of generated samples. To address the issues, we propose a novel self-adversarial
+				learning (SAL) paradigm for improving GANs’ performance in text generation.
+				In contrast to standard GANs that use a binary classifier as its discriminator
+				to predict whether a sample is real or generated, SAL employs a comparative
+				discriminator which is a pairwise classifier for comparing the text quality between
+				a pair of samples. During training, SAL rewards the generator when its currently
+				generated sentence is found to be better than its previously generated samples.
+				This self-improvement reward mechanism allows the model to receive credits
+				more easily and avoid collapsing towards the limited number of real samples,
+				which not only helps alleviate the reward sparsity issue but also reduces the risk of
+				mode collapse. Experiments on text generation benchmark datasets show that our
+				proposed approach substantially improves both the quality and the diversity, and
+				yields more stable performance compared to the previous GANs for text generation.
+				</p>
+				<p style="color:black;font-size:17px;text-align:justify">
+				<b>Notes: </b>Two GAN issues in text generation: (i) <b>Reward sparsity</b>, which is due to the fact that discriminator tends to learn much better than generator and thus easily recognizes generated samples as fakes; (ii) <b>Mode collapse</b>, which arises from the intrinsic nature of GANs and leads the adversarial models to only learn the limited patterns from the real samples.<br>
+				&emsp;This paper proposed a <b>self-adversarial learning</b> (SAL), which employs a <b>comparative discriminator</b> (a pairwise classifier) to assess whether the currently generated sample is better than its previously generated one. In the earlier training stage, this self-improvement reward mechanism makes it easier for the generator to receive non-sparse rewards due to the quality of generated samples is far below the real data; while in the later training stage, SAL can prevent a sample from keeping receiving high reward as the self-improvement for a popular mode will become very difficult, and thus avoid collapsing toward the limited patterns of real data.
+				</p>
+				<div class="widget tags"> 
+					<ul class="list-inline">
+					  <li class="list-inline-item"><a href="#" class="tag">#Self-adversarial Learning</a></li>
+					  <li class="list-inline-item"><a href="#" class="tag">#Generative Adversarial Nets</a></li>
+					  <li class="list-inline-item"><a href="#" class="tag">#Text Generation</a></li>
+					</ul>
+				</div>
+                <footer class="post-footer d-flex align-items-center">
+                  <div class="comments">read in 8 June, 2020</div>
+                </footer>
+              </div>
+            </div>
+          </div>
+          <!--<div class="image col-lg-4"><img src="../img/featured-pic-1.jpeg" alt="..."></div>-->
+        </div>
+		<br>
+		<!-- Post-->
+        <div class="row d-flex align-items-stretch">
+          <div class="text col-lg-12">
+            <div class="text-inner d-flex align-items-center">
+              <div class="content">
+                <header class="post-header">
+                  <!--<div class="category"><a href="#">Business</a><a href="#">Technology</a></div>-->
+				  <a href="https://arxiv.org/abs/1609.05473" target="_blank">
+                    <b>SeqGAN: Sequence Generative Adversarial Nets with Policy Gradient (AAAI 2017)</b>
+				  </a>
+                </header>
+                <p style="font-size:15px">Lantao Yu, Weinan Zhang, Jun Wang, Yong Yu</p>
+				<p style="color:black;font-size:17px;text-align:justify">
+				<b>Abstract: </b>As a new way of training generative models, Generative Adversarial Net (GAN) that uses a discriminative model to guide the training of the generative model has enjoyed considerable
+				success in generating real-valued data. However, it has limitations when the goal is for generating sequences of discrete tokens. A major reason lies in that the discrete outputs from the
+				generative model make it difficult to pass the gradient update
+				from the discriminative model to the generative model. Also,
+				the discriminative model can only assess a complete sequence,
+				while for a partially generated sequence, it is non-trivial to
+				balance its current score and the future one once the entire
+				sequence has been generated. In this paper, we propose a sequence generation framework, called SeqGAN, to solve the problems. Modeling the data generator as a stochastic policy in
+				reinforcement learning (RL), SeqGAN bypasses the generator
+				differentiation problem by directly performing gradient policy
+				update. The RL reward signal comes from the GAN discriminator judged on a complete sequence, and is passed back to the intermediate state-action steps using Monte Carlo search.
+				Extensive experiments on synthetic data and real-world tasks
+				demonstrate significant improvements over strong baselines.
+				</p>
+				<p style="color:black;font-size:17px;text-align:justify">
+				<b>Notes: </b>The maximum likelihood approaches suffer from <I>exposure bias</I> in the inference stage. A possible solution of the discrepancy between training and inference is to build the loss function on the entire generated sequence instead of each transition. Thus, Generative Adversarial Net (GAN) is a promising framework for alleviate this issue. However, applying GAN to generate sequence has two problems: (i) the discrete outputs from the generator make it difficult to pass the gradient update from the discriminator to the generator; (ii) the discriminator can only give the score/loss for an entire sequence when it has been generated.<br>
+				&emsp;To solve the problem that the gradient cannot pass back to the generator, this paper considered the sequence generation procedure as a sequential decision making process and regarded the generator as a stochastic parametrized policy, which can be trained via policy gradient. The state is the generated tokens so far and the action is the next token to be generated. In the policy gradient, this paper employed Monte Carlo (MC) search to approximate the state-action value for an intermediate state, which can be feedback to guide the learning of the generator.
+				</p>
+				<div class="widget tags"> 
+					<ul class="list-inline">
+					  <li class="list-inline-item"><a href="#" class="tag">#Generative Adversarial Nets</a></li>
+					  <li class="list-inline-item"><a href="#" class="tag">#Policy Gradient</a></li>
+					  <li class="list-inline-item"><a href="#" class="tag">#Monte Carlo Search</a></li>
+					  <li class="list-inline-item"><a href="#" class="tag">#Text Generation</a></li>
+					</ul>
+				</div>
+                <footer class="post-footer d-flex align-items-center">
+                  <div class="comments">read in 12 June, 2020</div>
+                </footer>
+              </div>
+            </div>
+          </div>
+          <!--<div class="image col-lg-4"><img src="../img/featured-pic-1.jpeg" alt="..."></div>-->
+        </div>
+		<br>
+        
+      </div>
+    </section>
+    
+    <!-- JavaScript files-->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="../vendor/@fancyapps/fancybox/jquery.fancybox.min.js"></script>
+    <script src="../js/front.js"></script>
+  </body>
+</html>
