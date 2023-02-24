@@ -233,7 +233,7 @@
                             <td width="100%" valign="middle">
                                 <heading>Publications</heading> <br><br>
 
-                                <heading2><i>Preprint</i></heading2><br><br>
+                                <!-- <heading2><i>Preprint</i></heading2><br><br>
 
                                 <div onmouseover="document.getElementById('KBQA-Survey-TKDE').style.display = 'block';" onmouseout="document.getElementById('KBQA-Survey-TKDE').style.display='none';">
                                     <a href="https://arxiv.org/pdf/2108.06688.pdf">
@@ -259,6 +259,32 @@
                                     summarize the challenges that these two categories of methods encounter when answering complex questions, and explicate advanced solutions and techniques used in existing work. Finally, we conclude and discuss several
                                     promising directions related to complex KBQA for future research.
 
+                                </div><br> -->
+
+                                <heading2><i>2023</i></heading2><br><br>
+
+                                <div onmouseover="document.getElementById('UniKGQA').style.display = 'block';" onmouseout="document.getElementById('SAFE').style.display='none';">
+                                    <a href="https://arxiv.org/abs/2212.00959">
+                                        <papertitle>UniKGQA: Unified Retrieval and Reasoning for Solving Multi-hop Question Answering Over Knowledge Graph
+                                        </papertitle>
+                                    </a><br>
+                                    <i><strong>Jinhao Jiang</strong></i>&dagger;,
+                                    <i>Kun Zhou</i>&dagger;,
+                                    <i>Wayne Xin Zhao</i>*,
+                                    <i>Ji-Rong Wen</i>
+                                    <br>
+                                    <em>International Conference on Learning Representations (ICLR)</em>, 2023<br>
+                                    <a href="https://arxiv.org/abs/2212.00959">pdf</a> / <a href="https://github.com/RUCAIBox/UniKGQA">code</a>
+                                </div>
+                                <div id="SAFE" style="display:none;text-align:justify">
+                                    Multi-hop Question Answering over Knowledge Graph~(KGQA) aims to find the answer entities that are multiple hops away from the topic entities mentioned in a natural language question on a large-scale Knowledge Graph (KG). To cope with the vast search
+                                    space, existing work usually adopts a two-stage approach: it firstly retrieves a relatively small subgraph related to the question and then performs the reasoning on the subgraph to accurately find the answer entities.
+                                    Although these two stages are highly related, previous work employs very different technical solutions for developing the retrieval and reasoning models, neglecting their relatedness in task essence. In this paper,
+                                    we propose UniKGQA, a novel approach for multi-hop KGQA task, by unifying retrieval and reasoning in both model architecture and parameter learning. For model architecture, UniKGQA consists of a semantic matching module
+                                    based on a pre-trained language model~(PLM) for question-relation semantic matching, and a matching information propagation module to propagate the matching information along the edges on KGs. For parameter learning,
+                                    we design a shared pre-training task based on question-relation matching for both retrieval and reasoning models, and then propose retrieval- and reasoning-oriented fine-tuning strategies. Compared with previous studies,
+                                    our approach is more unified, tightly relating the retrieval and reasoning stages. Extensive experiments on three benchmark datasets have demonstrated the effectiveness of our method on the multi-hop KGQA task. Our
+                                    codes and data are publicly available at https://github.com/RUCAIBox/UniKGQA.
                                 </div><br>
 
                                 <heading2><i>2022</i></heading2><br><br>
@@ -281,6 +307,31 @@
                                     the reasoning capacity of PTMs. Considering this issue, we conduct a deep empirical analysis, and find that it is indeed relation features from CSKGs (but not node features) that mainly contribute to the performance
                                     improvement of PTMs. Based on this finding, we design a simple MLP-based knowledge encoder that utilizes statistical relation paths as features. Extensive experiments conducted on five benchmarks demonstrate the effectiveness
                                     of our approach, which also largely reduces the parameters for encoding CSKGs. Our codes and data are publicly available at https://github.com/RUCAIBox/SAFE.
+                                </div><br>
+
+                                <div onmouseover="document.getElementById('KBQA-Survey-TKDE').style.display = 'block';" onmouseout="document.getElementById('KBQA-Survey-TKDE').style.display='none';">
+                                    <a href="https://arxiv.org/pdf/2108.06688.pdf">
+                                        <papertitle>Complex Knowledge Base Question Answering: A Survey
+                                        </papertitle>
+                                    </a><br>
+                                    <i>Yunshi Lan</i>&dagger;,
+                                    <i>Gaole He</i>&dagger;,
+                                    <i><strong>Jinhao Jiang<strong></i>,
+                                    <i>Jing Jiang</i>,
+                                    <i>Wayne Xin Zhao</i>*,
+                                    <i>Ji-Rong Wen</i>
+                                    <br>
+                                    <em>IEEE Transactions on Knowledge and Data Engineering (TKDE)</em>, 2022 <br>
+                                    <a href="https://arxiv.org/pdf/2108.06688.pdf">pdf</a>
+                                </div>
+                                <div id="KBQA-Survey-TKDE" style="display:none;text-align:justify">
+                                    Knowledge base question answering (KBQA) aims to answer a question over a knowledge base (KB). Early studies mainly focused on answering simple questions over KBs and achieved great success. However, their performance on complex questions is still far
+                                    from satisfactory. Therefore, in recent years, researchers propose a large number of novel methods, which looked into the challenges of answering complex questions. In this survey, we review recent advances on KBQA
+                                    with the focus on solving complex questions, which usually contain multiple subjects, express compound relations, or involve numerical operations. In detail, we begin with introducing the complex KBQA task and relevant
+                                    background. Then, we describe benchmark datasets for complex KBQA task and introduce the construction process of these datasets. Next, we present two mainstream categories of methods for complex KBQA, namely semantic
+                                    parsing-based (SP-based) methods and information retrieval-based (IR-based) methods. Specifically, we illustrate their procedures with flow designs and discuss their major differences and similarities. After that, we
+                                    summarize the challenges that these two categories of methods encounter when answering complex questions, and explicate advanced solutions and techniques used in existing work. Finally, we conclude and discuss several
+                                    promising directions related to complex KBQA for future research.
                                 </div><br>
 
                                 <heading2><i>2021</i></heading2><br><br>
