@@ -233,33 +233,59 @@
                             <td width="100%" valign="middle">
                                 <heading>Publications</heading> <br><br>
 
-                                <!-- <heading2><i>Preprint</i></heading2><br><br>
+                                <heading2><i>Preprint</i></heading2><br><br>
 
-                                <div onmouseover="document.getElementById('KBQA-Survey-TKDE').style.display = 'block';" onmouseout="document.getElementById('KBQA-Survey-TKDE').style.display='none';">
-                                    <a href="https://arxiv.org/pdf/2108.06688.pdf">
-                                        <papertitle>Complex Knowledge Base Question Answering: A Survey
+                                <div onmouseover="document.getElementById('StructGPT').style.display = 'block';" onmouseout="document.getElementById('StructGPT').style.display='none';">
+                                    <a href="https://arxiv.org/pdf/2305.09645.pdf">
+                                        <font color="#FF0000">!!!!!</font>
+                                        <papertitle>StructGPT: A General Framework for Large Language Model to Reason over Structured Data
                                         </papertitle>
                                     </a><br>
-                                    <i>Yunshi Lan</i>&dagger;,
-                                    <i>Gaole He</i>&dagger;,
-                                    <i><strong>Jinhao Jiang<strong></i>,
-                                    <i>Jing Jiang</i>,
+                                    <i><strong>Jinhao Jiang</strong></i>&dagger;,
+                                    <i>Kun Zhou</i>&dagger;,
+                                    <i>Zican Dong</i>
+                                    <i>Keming Ye</i>
                                     <i>Wayne Xin Zhao</i>*,
                                     <i>Ji-Rong Wen</i>
                                     <br>
                                     <em>arXiv</em>, 2021 <br>
-                                    <a href="https://arxiv.org/pdf/2108.06688.pdf">pdf</a>
+                                    <a href="https://arxiv.org/pdf/2305.09645.pdf">pdf</a>
                                 </div>
-                                <div id="KBQA-Survey-TKDE" style="display:none;text-align:justify">
-                                    Knowledge base question answering (KBQA) aims to answer a question over a knowledge base (KB). Early studies mainly focused on answering simple questions over KBs and achieved great success. However, their performance on complex questions is still far
-                                    from satisfactory. Therefore, in recent years, researchers propose a large number of novel methods, which looked into the challenges of answering complex questions. In this survey, we review recent advances on KBQA
-                                    with the focus on solving complex questions, which usually contain multiple subjects, express compound relations, or involve numerical operations. In detail, we begin with introducing the complex KBQA task and relevant
-                                    background. Then, we describe benchmark datasets for complex KBQA task and introduce the construction process of these datasets. Next, we present two mainstream categories of methods for complex KBQA, namely semantic
-                                    parsing-based (SP-based) methods and information retrieval-based (IR-based) methods. Specifically, we illustrate their procedures with flow designs and discuss their major differences and similarities. After that, we
-                                    summarize the challenges that these two categories of methods encounter when answering complex questions, and explicate advanced solutions and techniques used in existing work. Finally, we conclude and discuss several
-                                    promising directions related to complex KBQA for future research.
+                                <div id="StructGPT" style="display:none;text-align:justify">
+                                    In this paper, we study how to improve the zero-shot reasoning ability of large language models (LLMs) over structured data in a unified way. Inspired by the study on tool augmentation for LLMs, we develop an Iterative Reading-then-Reasoning (IRR) approach
+                                    for solving question answering tasks based on structured data, called StructGPT. In our approach, we construct the specialized function to collect relevant evidence from structured data (i.e., reading), and let LLMs
+                                    concentrate the reasoning task based on the collected information (i.e., reasoning). Specially, we propose an invoking-linearization-generation procedure to support LLMs in reasoning on the structured data with the
+                                    help of the external interfaces. By iterating this procedures with provided interfaces, our approach can gradually approach the target answer to a given query. Extensive experiments conducted on three types of structured
+                                    data demonstrate the effectiveness of our approach, which can significantly boost the performance of ChatGPT and achieve comparable performance against the full-data supervised-tuning baselines. Our codes and data are
+                                    publicly available at https://github.com/RUCAIBox/StructGPT.
+                                </div><br>
 
-                                </div><br> -->
+                                <div onmouseover="document.getElementById('LLM-Survey').style.display = 'block';" onmouseout="document.getElementById('LLM-Survey').style.display='none';">
+                                    <a href="https://arxiv.org/pdf/2303.18223.pdf">
+                                        <papertitle>A Survey of Large Language Models
+                                        </papertitle>
+                                    </a><br>
+                                    <i>Wayne Xin Zhao</i>,
+                                    <i>Kun Zhou</i>&dagger;,
+                                    <i><strong>Junyi Li</strong></i>&dagger;,
+                                    <i>Tianyi Tang, Xiaolei Wang, Yupeng Hou, Yingqian Min, Beichen Zhang, Junjie Zhang, Zican Dong, Yifan Du, Chen Yang, Yushuo Chen, Zhipeng Chen, <strong>Jinhao Jiang</strong>, Ruiyang Ren, Yifan Li, Xinyu Tang, Zikang Liu, Peiyu Liu</i>,
+                                    <i>Jian-Yun Nie</i>,
+                                    <i>Ji-Rong Wen</i>
+                                    <br>
+                                    <em>arXiv</em>, 2021 <br>
+                                    <a href="https://arxiv.org/pdf/2303.18223.pdf">pdf</a>
+                                </div>
+                                <div id="LLM-Survey" style="display:none;text-align:justify">
+                                    Language is essentially a complex, intricate system of human expressions governed by grammatical rules. It poses a significant challenge to develop capable AI algorithms for comprehending and grasping a language. As a major approach, language modeling
+                                    has been widely studied for language understanding and generation in the past two decades, evolving from statistical language models to neural language models. Recently, pre-trained language models (PLMs) have been
+                                    proposed by pre-training Transformer models over large-scale corpora, showing strong capabilities in solving various NLP tasks. Since researchers have found that model scaling can lead to performance improvement, they
+                                    further study the scaling effect by increasing the model size to an even larger size. Interestingly, when the parameter scale exceeds a certain level, these enlarged language models not only achieve a significant performance
+                                    improvement but also show some special abilities that are not present in small-scale language models. To discriminate the difference in parameter scale, the research community has coined the term large language models
+                                    (LLM) for the PLMs of significant size. Recently, the research on LLMs has been largely advanced by both academia and industry, and a remarkable progress is the launch of ChatGPT, which has attracted widespread attention
+                                    from society. The technical evolution of LLMs has been making an important impact on the entire AI community, which would revolutionize the way how we develop and use AI algorithms. In this survey, we review the recent
+                                    advances of LLMs by introducing the background, key findings, and mainstream techniques. In particular, we focus on four major aspects of LLMs, namely pre-training, adaptation tuning, utilization, and capacity evaluation.
+                                    Besides, we also summarize the available resources for developing LLMs and discuss the remaining issues for future directions.
+                                </div><br>
 
                                 <heading2><i>2023</i></heading2><br><br>
 
