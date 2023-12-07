@@ -289,6 +289,55 @@
 
                                 <heading2><i>2023</i></heading2><br><br>
 
+                                <div onmouseover="document.getElementById('StructGPT').style.display = 'block';" onmouseout="document.getElementById('StructGPT').style.display='none';">
+                                    <a href="https://arxiv.org/pdf/2305.09645.pdf">
+                                        <font color="#FF0000">!!!!!</font>
+                                        <papertitle>StructGPT: A General Framework for Large Language Model to Reason over Structured Data
+                                        </papertitle>
+                                    </a><br>
+                                    <i><strong>Jinhao Jiang</strong></i>&dagger;,
+                                    <i>Kun Zhou</i>&dagger;,
+                                    <i>Zican Dong</i>
+                                    <i>Keming Ye</i>
+                                    <i>Wayne Xin Zhao</i>*,
+                                    <i>Ji-Rong Wen</i>
+                                    <br>
+                                    <em>EMNLP</em>, 2023 <br>
+                                    <a href="https://arxiv.org/pdf/2305.09645.pdf">pdf</a> / <a href="https://github.com/RUCAIBox/StructGPT">code</a>
+                                </div>
+                                <div id="StructGPT" style="display:none;text-align:justify">
+                                    In this paper, we study how to improve the zero-shot reasoning ability of large language models (LLMs) over structured data in a unified way. Inspired by the study on tool augmentation for LLMs, we develop an Iterative Reading-then-Reasoning (IRR) approach
+                                    for solving question answering tasks based on structured data, called StructGPT. In our approach, we construct the specialized function to collect relevant evidence from structured data (i.e., reading), and let LLMs
+                                    concentrate the reasoning task based on the collected information (i.e., reasoning). Specially, we propose an invoking-linearization-generation procedure to support LLMs in reasoning on the structured data with the
+                                    help of the external interfaces. By iterating this procedures with provided interfaces, our approach can gradually approach the target answer to a given query. Extensive experiments conducted on three types of structured
+                                    data demonstrate the effectiveness of our approach, which can significantly boost the performance of ChatGPT and achieve comparable performance against the full-data supervised-tuning baselines. Our codes and data are
+                                    publicly available at https://github.com/RUCAIBox/StructGPT.
+                                </div><br>
+
+                                <div onmouseover="document.getElementById('ReasoningLM').style.display = 'block';" onmouseout="document.getElementById('ReasoningLM').style.display='none';">
+                                    <a href="https://arxiv.org/pdf/2305.09645.pdf">
+                                        <font color="#FF0000">!!!!!</font>
+                                        <papertitle>ReasoningLM: Enabling Structural Subgraph Reasoning in Pre-trained Language Models for Question Answering over Knowledge Graph
+                                        </papertitle>
+                                    </a><br>
+                                    <i><strong>Jinhao Jiang</strong></i>&dagger;,
+                                    <i>Kun Zhou</i>&dagger;,
+                                    <i>Wayne Xin Zhao</i>*,
+                                    <i>Yaliang Li</i>,
+                                    <i>Ji-Rong Wen</i>
+                                    <br>
+                                    <em>EMNLP</em>, 2023 <br>
+                                    <a href="https://arxiv.org/pdf/2305.09645.pdf">pdf</a> / <a href="https://github.com/RUCAIBox/ReasoningLM">code</a>
+                                </div>
+                                <div id="StructGPT" style="display:none;text-align:justify">
+                                    Question Answering over Knowledge Graph (KGQA) aims to seek answer entities for the natural language question from a large-scale Knowledge Graph~(KG). To better perform reasoning on KG, recent work typically adopts a pre-trained language model~(PLM) to
+                                    model the question, and a graph neural network~(GNN) based module to perform multi-hop reasoning on the KG. Despite the effectiveness, due to the divergence in model architecture, the PLM and GNN are not closely integrated,
+                                    limiting the knowledge sharing and fine-grained feature interactions. To solve it, we aim to simplify the above two-module approach, and develop a more capable PLM that can directly support subgraph reasoning for KGQA,
+                                    namely ReasoningLM. In our approach, we propose a subgraph-aware self-attention mechanism to imitate the GNN for performing structured reasoning, and also adopt an adaptation tuning strategy to adapt the model parameters
+                                    with 20,000 subgraphs with synthesized questions. After adaptation, the PLM can be parameter-efficient fine-tuned on downstream tasks. Experiments show that ReasoningLM surpasses state-of-the-art models by a large margin,
+                                    even with fewer updated parameters and less training data. Our codes and data are publicly available at https://github.com/RUCAIBox/StructGPT.
+                                </div><br>
+
                                 <div onmouseover="document.getElementById('UniKGQA').style.display = 'block';" onmouseout="document.getElementById('SAFE').style.display='none';">
                                     <a href="https://arxiv.org/abs/2212.00959">
                                         <papertitle>UniKGQA: Unified Retrieval and Reasoning for Solving Multi-hop Question Answering Over Knowledge Graph
@@ -302,7 +351,7 @@
                                     <em>International Conference on Learning Representations (ICLR)</em>, 2023<br>
                                     <a href="https://arxiv.org/abs/2212.00959">pdf</a> / <a href="https://github.com/RUCAIBox/UniKGQA">code</a>
                                 </div>
-                                <div id="SAFE" style="display:none;text-align:justify">
+                                <div id="UniKGQA" style="display:none;text-align:justify">
                                     Multi-hop Question Answering over Knowledge Graph~(KGQA) aims to find the answer entities that are multiple hops away from the topic entities mentioned in a natural language question on a large-scale Knowledge Graph (KG). To cope with the vast search
                                     space, existing work usually adopts a two-stage approach: it firstly retrieves a relatively small subgraph related to the question and then performs the reasoning on the subgraph to accurately find the answer entities.
                                     Although these two stages are highly related, previous work employs very different technical solutions for developing the retrieval and reasoning models, neglecting their relatedness in task essence. In this paper,
