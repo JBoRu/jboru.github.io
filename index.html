@@ -184,8 +184,7 @@
                                 </p>
                                 <p style="text-align:justify">
                                     I am a Ph.D. student supervised by <a href="http://playbigdata.ruc.edu.cn/batmanfly/">Prof. Xin Zhao</a> from <a href="http://ai.ruc.edu.cn/english/index.htm">GSAI</a>,
-                                    <a href="https://ruc.edu.cn">Renmin University of China</a>. I have a broad interest in natural language processing, with an emphasis on knowledge and reasoning, especially based on pretrained language models (PLMs)
-                                    .
+                                    <a href="https://ruc.edu.cn">Renmin University of China</a>. I have a broad interest in natural language processing, with an emphasis on knowledge and reasoning, especially based on large language models (LLMs) .
                                 </p>
                                 <p>Email: jiangjinhao at ruc dot edu dot cn</p>
                                 <!--         <p>
@@ -234,31 +233,6 @@
                                 <heading>Publications</heading> <br><br>
 
                                 <heading2><i>Preprint</i></heading2><br><br>
-
-                                <div onmouseover="document.getElementById('StructGPT').style.display = 'block';" onmouseout="document.getElementById('StructGPT').style.display='none';">
-                                    <a href="https://arxiv.org/pdf/2305.09645.pdf">
-                                        <font color="#FF0000">!!!!!</font>
-                                        <papertitle>StructGPT: A General Framework for Large Language Model to Reason over Structured Data
-                                        </papertitle>
-                                    </a><br>
-                                    <i><strong>Jinhao Jiang</strong></i>&dagger;,
-                                    <i>Kun Zhou</i>&dagger;,
-                                    <i>Zican Dong</i>
-                                    <i>Keming Ye</i>
-                                    <i>Wayne Xin Zhao</i>*,
-                                    <i>Ji-Rong Wen</i>
-                                    <br>
-                                    <em>arXiv</em>, 2023 <br>
-                                    <a href="https://arxiv.org/pdf/2305.09645.pdf">pdf</a> / <a href="https://github.com/RUCAIBox/StructGPT">code</a>
-                                </div>
-                                <div id="StructGPT" style="display:none;text-align:justify">
-                                    In this paper, we study how to improve the zero-shot reasoning ability of large language models (LLMs) over structured data in a unified way. Inspired by the study on tool augmentation for LLMs, we develop an Iterative Reading-then-Reasoning (IRR) approach
-                                    for solving question answering tasks based on structured data, called StructGPT. In our approach, we construct the specialized function to collect relevant evidence from structured data (i.e., reading), and let LLMs
-                                    concentrate the reasoning task based on the collected information (i.e., reasoning). Specially, we propose an invoking-linearization-generation procedure to support LLMs in reasoning on the structured data with the
-                                    help of the external interfaces. By iterating this procedures with provided interfaces, our approach can gradually approach the target answer to a given query. Extensive experiments conducted on three types of structured
-                                    data demonstrate the effectiveness of our approach, which can significantly boost the performance of ChatGPT and achieve comparable performance against the full-data supervised-tuning baselines. Our codes and data are
-                                    publicly available at https://github.com/RUCAIBox/StructGPT.
-                                </div><br>
 
                                 <div onmouseover="document.getElementById('LLM-Survey').style.display = 'block';" onmouseout="document.getElementById('LLM-Survey').style.display='none';">
                                     <a href="https://arxiv.org/pdf/2303.18223.pdf">
@@ -329,7 +303,7 @@
                                     <em>EMNLP</em>, 2023 <br>
                                     <a href="https://arxiv.org/pdf/2305.09645.pdf">pdf</a> / <a href="https://github.com/RUCAIBox/ReasoningLM">code</a>
                                 </div>
-                                <div id="StructGPT" style="display:none;text-align:justify">
+                                <div id="ReasoningLM" style="display:none;text-align:justify">
                                     Question Answering over Knowledge Graph (KGQA) aims to seek answer entities for the natural language question from a large-scale Knowledge Graph~(KG). To better perform reasoning on KG, recent work typically adopts a pre-trained language model~(PLM) to
                                     model the question, and a graph neural network~(GNN) based module to perform multi-hop reasoning on the KG. Despite the effectiveness, due to the divergence in model architecture, the PLM and GNN are not closely integrated,
                                     limiting the knowledge sharing and fine-grained feature interactions. To solve it, we aim to simplify the above two-module approach, and develop a more capable PLM that can directly support subgraph reasoning for KGQA,
