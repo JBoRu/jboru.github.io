@@ -261,11 +261,35 @@
                                     Besides, we also summarize the available resources for developing LLMs and discuss the remaining issues for future directions.
                                 </div><br>
 
+                                <div onmouseover="document.getElementById('KGAgent').style.display = 'block';" onmouseout="document.getElementById('KGAgent').style.display='none';">
+                                    <a href="https://arxiv.org/pdf/2402.11163.pdf">
+                                        <font color="#FF0000">!!!!!</font>
+                                        <papertitle>KG-Agent: An Efficient Autonomous Agent Framework for Complex Reasoning over Knowledge Graph
+                                        </papertitle>
+                                    </a><br>
+                                    <i><strong>Jinhao Jiang</strong></i>,
+                                    <i>Kun Zhou</i>,
+                                    <i>Wayne Xin Zhao</i>*,
+                                    <i>Yang Song</i>*,
+                                    <i>Chen Zhu</i>,
+                                    <i>Hengshu Zhu</i>,
+                                    <i>Ji-Rong Wen</i>
+                                    <br>
+                                    <em>arXiv</em>, 2024 <br>
+                                    <a href="https://arxiv.org/pdf/2402.11163.pdf">pdf</a>
+                                </div>
+                                <div id="KGAgent" style="display:none;text-align:justify">
+                                    In this paper, we aim to improve the reasoning ability of large language models (LLMs) over knowledge graphs (KGs) to answer complex questions. Inspired by existing methods that design the interaction strategy between LLMs and KG, we propose an autonomous
+                                    LLM-based agent framework, called KG-Agent, which enables a small LLM to actively make decisions until finishing the reasoning process over KGs. In KG-Agent, we integrate the LLM, multifunctional toolbox, KG-based executor,
+                                    and knowledge memory, and develop an iteration mechanism that autonomously selects the tool then updates the memory for reasoning over KG. To guarantee the effectiveness, we leverage program language to formulate the
+                                    multi-hop reasoning process over the KG, and synthesize a code-based instruction dataset to fine-tune the base LLM. Extensive experiments demonstrate that only using 10K samples for tuning LLaMA-7B can outperform state-of-the-art
+                                    methods using larger LLMs or more data, on both in-domain and out-domain datasets. Our code and data will be publicly released.
+                                </div><br>
+
                                 <heading2><i>2023</i></heading2><br><br>
 
                                 <div onmouseover="document.getElementById('StructGPT').style.display = 'block';" onmouseout="document.getElementById('StructGPT').style.display='none';">
                                     <a href="https://arxiv.org/pdf/2305.09645.pdf">
-                                        <font color="#FF0000">!!!!!</font>
                                         <papertitle>StructGPT: A General Framework for Large Language Model to Reason over Structured Data
                                         </papertitle>
                                     </a><br>
@@ -290,7 +314,6 @@
 
                                 <div onmouseover="document.getElementById('ReasoningLM').style.display = 'block';" onmouseout="document.getElementById('ReasoningLM').style.display='none';">
                                     <a href="https://arxiv.org/pdf/2305.09645.pdf">
-                                        <font color="#FF0000">!!!!!</font>
                                         <papertitle>ReasoningLM: Enabling Structural Subgraph Reasoning in Pre-trained Language Models for Question Answering over Knowledge Graph
                                         </papertitle>
                                     </a><br>
