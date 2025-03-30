@@ -186,15 +186,28 @@
                                     I am a fourth-year Ph.D. student supervised by <a href="http://playbigdata.ruc.edu.cn/batmanfly/">Prof. Xin Zhao</a> from <a href="http://ai.ruc.edu.cn/english/index.htm">GSAI</a>,
                                     <a href="https://ruc.edu.cn">Renmin University of China</a>. I have a broad interest in natural language processing and large language model, with an emphasis on <strong>knowledge augmentation</strong> and <strong>complex reasoning</strong>, especially for complex data (e.g., Knowledge Graph, Database), complex search (e.g., RAG, AI Searcher), and complex reasoning (e.g., Math).
                                 </p>
-                                <p>Email: jiangjinhao at ruc dot edu dot cn</p>
-
-                                <p align="center">
-                                    <a href="./images/resume_cn.pdf" target="_blank">CV_CN</a> &nbsp;/&nbsp;
-                                    <a href="./images/resume.pdf" target="_blank">CV_EN</a> &nbsp;/&nbsp;
-                                    <a href="https://scholar.google.com/citations?user=TeFKijMAAAAJ&hl=en" target="_blank">Google Scholar</a> &nbsp;/&nbsp;
-                                    <a href="https://github.com/JBoRu" target="_blank"> GitHub </a> &nbsp;/&nbsp;
-                                    <a href="https://www.zhihu.com/people/heng-zu-hao" target="_blank">Zhihu</a>
+                                <p>
+                                    <i class="fa-solid fa-envelope"></i> Email: jiangjinhao at ruc dot edu dot cn
                                 </p>
+
+                                <p class="social-icons" align="center">
+                                    <a href="https://scholar.google.com/citations?user=TeFKijMAAAAJ&hl=en" target="_blank">
+                                        <i class="fa-brands fa-google-scholar"></i> Google Scholar
+                                    </a>
+                                    <a href="https://github.com/JBoRu" target="_blank">
+                                        <i class="fa-brands fa-github"></i> GitHub
+                                    </a>
+                                </p>
+
+                                <h2>
+                                    <i class="fa-solid fa-bullhorn"></i> Recent News
+                                </h2>
+                                <div class="updates-container">
+                                    <p><i class="fa-solid fa-circle-dot"></i> [2025-03-07] Search + RL: <a href="https://arxiv.org/pdf/2503.05592">R1-Searcher: Incentivizing the Search Capability in
+                                        LLMs via Reinforcement Learning</a></p>
+                                    <!-- <p><i class="fa-solid fa-circle-dot"></i> [2025-03-25] 参加了一个自然语言处理的研讨会。</p> -->
+                                    <!-- <p><i class="fa-solid fa-circle-dot"></i> [2025-03-20] 与导师讨论了新的研究方向。</p> -->
+                                </div>
                             </td>
                             <td width="33%">
                                 <img src="./images/jiangjinhao.jpg" width="80%">
@@ -222,7 +235,7 @@
                             <td width="100%" valign="middle">
                                 <heading>Experience</heading> <br><br>
                                 <ul>
-                                    <li>2025/01 - present: ByteDance (字节跳动) LLM Research Intern
+                                    <li>2025/01 - present: seed-ByteDance (字节跳动) LLM Research Intern
                                     </li>
                                     <li>2024/10 - 2024/12: BAAI (智源研究院) LLM Research Intern
                                     </li>
@@ -240,32 +253,26 @@
                                 
                                 <!-- <heading2><i>Preprint</i></heading2><br><br> -->
 
-                                <!-- <div onmouseover="document.getElementById('LLM-Survey').style.display = 'block';" onmouseout="document.getElementById('LLM-Survey').style.display='none';">
-                                    <a href="https://arxiv.org/pdf/2303.18223.pdf">
+                                <div onmouseover="document.getElementById('R1-Searcher').style.display = 'block';" onmouseout="document.getElementById('R1-Searcher').style.display='none';">
+                                    <a href="https://arxiv.org/pdf/2503.05592.pdf">
                                         <papertitle>A Survey of Large Language Models
                                         </papertitle>
                                     </a><br>
+                                    <i>Huatong Song</i>,
+                                    <i>Jinhao Jiang</i>&dagger;,
+                                    <i>Yingqian Min</i>&dagger;,
+                                    <i>Jie Chen</i>,
+                                    <i>Zhipeng Chen</i>,
                                     <i>Wayne Xin Zhao</i>,
-                                    <i>Kun Zhou</i>&dagger;,
-                                    <i>Junyi Li</i>&dagger;,
-                                    <i>Tianyi Tang, Xiaolei Wang, Yupeng Hou, Yingqian Min, Beichen Zhang, Junjie Zhang, Zican Dong, Yifan Du, Chen Yang, Yushuo Chen, Zhipeng Chen, <strong>Jinhao Jiang</strong>, Ruiyang Ren, Yifan Li, Xinyu Tang, Zikang Liu, Peiyu Liu</i>,
-                                    <i>Jian-Yun Nie</i>,
+                                    <i>Lei Fang</i>,
                                     <i>Ji-Rong Wen</i>
                                     <br>
-                                    <em>arXiv</em>, 2023 <br>
-                                    <a href="https://arxiv.org/pdf/2303.18223.pdf">pdf</a> / <a href="https://github.com/RUCAIBox/LLMSurvey">code</a>
+                                    <em>arXiv</em>, 2025 <br>
+                                    <a href="https://arxiv.org/pdf/2503.05592.pdf">pdf</a> / <a href="https://github.com/RUCAIBox/R1-Searcher">code</a>
                                 </div>
-                                <div id="LLM-Survey" style="display:none;text-align:justify">
-                                    Language is essentially a complex, intricate system of human expressions governed by grammatical rules. It poses a significant challenge to develop capable AI algorithms for comprehending and grasping a language. As a major approach, language modeling
-                                    has been widely studied for language understanding and generation in the past two decades, evolving from statistical language models to neural language models. Recently, pre-trained language models (PLMs) have been
-                                    proposed by pre-training Transformer models over large-scale corpora, showing strong capabilities in solving various NLP tasks. Since researchers have found that model scaling can lead to performance improvement, they
-                                    further study the scaling effect by increasing the model size to an even larger size. Interestingly, when the parameter scale exceeds a certain level, these enlarged language models not only achieve a significant performance
-                                    improvement but also show some special abilities that are not present in small-scale language models. To discriminate the difference in parameter scale, the research community has coined the term large language models
-                                    (LLM) for the PLMs of significant size. Recently, the research on LLMs has been largely advanced by both academia and industry, and a remarkable progress is the launch of ChatGPT, which has attracted widespread attention
-                                    from society. The technical evolution of LLMs has been making an important impact on the entire AI community, which would revolutionize the way how we develop and use AI algorithms. In this survey, we review the recent
-                                    advances of LLMs by introducing the background, key findings, and mainstream techniques. In particular, we focus on four major aspects of LLMs, namely pre-training, adaptation tuning, utilization, and capacity evaluation.
-                                    Besides, we also summarize the available resources for developing LLMs and discuss the remaining issues for future directions.
-                                </div><br> -->
+                                <div id="R1-Searcher'" style="display:none;text-align:justify">
+                                    Existing Large Reasoning Models (LRMs) have shown the potential of reinforcement learning (RL) to enhance the complex reasoning capabilities of Large Language Models (LLMs). While they achieve remarkable performance on challenging tasks such as mathematics and coding, they often rely on their internal knowledge to solve problems, which can be inadequate for time-sensitive or knowledgeintensive questions, leading to inaccuracies and hallucinations. To address this, we propose R1-Searcher, a novel two-stage outcome-based RL approach designed to enhance the search capabilities of LLMs. This method allows LLMs to autonomously invoke external search systems to access additional knowledge during the reasoning process. Our framework relies exclusively on RL, without requiring process rewards or distillation for a cold start. Our experiments demonstrate that our method significantly outperforms previous strong RAG methods, even when compared to the closed-source GPT-4o-mini. The code is available at https://github.com/RUCAIBox/R1-Searcher.
+                                </div><br>
 
                                 <div onmouseover="document.getElementById('STILL-2').style.display = 'block';" onmouseout="document.getElementById('STILL-2').style.display='none';">
                                     <a href="https://arxiv.org/pdf/2412.09413?.pdf">
