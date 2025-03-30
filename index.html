@@ -1,124 +1,603 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Jinhao Jiang">
-    <title>Jinhao Jiang (蒋锦昊)</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="https://tuchuang-1258543525.cos.ap-beijing.myqcloud.com/20180614_161325021_iOS.jpg" type="image/x-icon">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Jinhao Jiang</title>
+    <meta content="Jinhao Jiang, https://jboru.github.io" name="keywords">
+
+    <style media="screen" type="text/css">
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        font,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        tt,
+        var,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td {
+            border: 0pt none;
+            font-family: inherit;
+            font-size: 100%;
+            font-style: inherit;
+            font-weight: inherit;
+            margin: 0pt;
+            outline-color: invert;
+            outline-style: none;
+            outline-width: 0pt;
+            padding: 0pt;
+            vertical-align: baseline;
+        }
+
+        a {
+            color: #1772d0;
+            text-decoration: none;
+        }
+
+        a:focus,
+        a:hover {
+            color: #f09228;
+            text-decoration: none;
+        }
+
+        a.paper {
+            font-weight: bold;
+            font-size: 12pt;
+        }
+
+        b.paper {
+            font-weight: bold;
+            font-size: 12pt;
+        }
+
+        * {
+            margin: 0pt;
+            padding: 0pt;
+        }
+
+        body {
+            position: relative;
+            margin: 3em auto 2em auto;
+            width: 800px;
+            font-family: Verdana, Helvetica, sans-serif;
+            font-size: 14px;
+            background: #eee;
+        }
+
+        h2 {
+            font-family: Verdana, Helvetica, sans-serif;
+            font-size: 15pt;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-family: Verdana, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        strong {
+            font-family: Verdana, Helvetica, sans-serif;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style: circle;
+        }
+
+        img {
+            border: none;
+        }
+
+        li {
+            padding-bottom: 0.5em;
+            margin-left: 1.4em;
+        }
+
+        alert {
+            font-family: Verdana, Helvetica, sans-serif;
+            font-size: 13px;
+            font-weight: bold;
+            color: #FF0000;
+        }
+
+        em,
+        i {
+            font-style: italic;
+        }
+
+        div.section {
+            clear: both;
+            margin-bottom: 1.5em;
+            background: #eee;
+        }
+
+        div.spanner {
+            clear: both;
+        }
+
+        div.paper {
+            clear: both;
+            margin-top: 0.5em;
+            margin-bottom: 1em;
+            border: 1px solid #ddd;
+            background: #fff;
+            padding: 1em 1em 1em 1em;
+        }
+
+        div.paper div {
+            padding-left: 230px;
+        }
+
+        img.paper {
+            margin-bottom: 0.5em;
+            float: left;
+            width: 200px;
+        }
+
+        span.blurb {
+            font-style: italic;
+            display: block;
+            margin-top: 0.75em;
+            margin-bottom: 0.5em;
+        }
+
+        pre,
+        code {
+            font-family: 'Lucida Console', 'Andale Mono', 'Courier', monospaced;
+            margin: 1em 0;
+            padding: 0;
+        }
+
+        div.paper pre {
+            font-size: 0.9em;
+        }
+    </style>
+
+
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+          type="text/css"/>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164510176-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-164510176-1');
+    </script>
+
 </head>
 
+
 <body>
-    <header>
-        <div class="container">
-            <h1>Jinhao Jiang (蒋锦昊)</h1>
-            <p>I am a fourth-year Ph.D. student supervised by <a href="http://playbigdata.ruc.edu.cn/batmanfly/">Prof. Xin Zhao</a> from <a href="http://ai.ruc.edu.cn/english/index.htm">GSAI</a>, <a href="https://ruc.edu.cn">Renmin University of China</a>. I have a broad interest in natural language processing and large language models, with an emphasis on <strong>knowledge augmentation</strong> and <strong>complex reasoning</strong>.</p>
-            <p><i class="fas fa-envelope"></i> Email: jiangjinhao at ruc dot edu dot cn</p>
-            <div class="social-icons">
-                <a href="https://scholar.google.com/citations?user=TeFKijMAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i> Google Scholar</a>
-                <a href="https://github.com/JBoRu" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+
+    <!--photo and basic information-->
+    <div style="margin-bottom: 1em; border: 1px solid #ddd; background-color: #fff; padding: 1em; height: 120px;">
+        <div style="margin: 0px auto; width: 100%;">
+            <img title="jinhao" style="float: left; padding-left: .01em; height: 120px;"
+                 src="images/jiangjinhao.jpg">
+            <div style="padding-left: 12em; vertical-align: top; height: 120px;">
+                <span style="line-height: 150%; font-size: 20pt;">Jinhao Jiang (蒋锦昊)</span><br>
+                <span><a href="http://ai.ruc.edu.cn/">Gaoling School of Artificial Intelligence</a>, <a
+                        href="https://en.ruc.edu.cn/">Renmin University of China(RUC)</a></span><br><br>
+                <span><strong>Address</strong>: No.59 Zhongguancun Street, Haidian District Beijing, 100872, P.R. China</span><br>
+                <span><strong>Email</strong>: jiangjinhao [at] ruc.edu.cn</span>
             </div>
         </div>
-    </header>
+    </div>
+    <!--<div style="clear: both; background-color: #fff; margin-top: 1.5em; padding: .2em; padding-left: .3em;">-->
 
-    <main class="container">
-        <section>
-            <h2><i class="fas fa-bullhorn"></i> Recent News</h2>
-            <div class="updates-container">
-                <ul id="news-list">
-                    <li>[2025-03-07] Search + RL: <a href="https://arxiv.org/pdf/2503.05592">R1-Searcher: Incentivizing the Search Capability in LLMs via Reinforcement Learning</a></li>
-                    <!-- Add more news items here -->
-                    <!-- Example: -->
-                    <!-- <li>[2025-02-15] New publication on LLMs in <a href="#">Journal XYZ</a>.</li> -->
-                    <!-- <li>[2025-01-10] Presented at ABC Conference.</li> -->
-                    <!-- Older news items -->
+    
+    <!--biography-->
+    <div style="clear: both;">
+        <div class="section">
+            <h2>About Me <a href="https://github.com/JBoRu">[GitHub]</a>
+                <a href="https://scholar.google.com/citations?user=TeFKijMAAAAJ&hl=en">[Google Scholar]</a>
+            </h2>
+            <div class="paper">
+                I am a fourth-year Ph.D. student (expected to graduate in June 2026) supervised by <a href="http://playbigdata.ruc.edu.cn/batmanfly/">Prof. Xin Zhao</a> from <a href="http://ai.ruc.edu.cn/english/index.htm">GSAI</a>, <a href="https://ruc.edu.cn">Renmin University of China</a>. Prior to this, I obtained a bachelor's degree from the <a href="https://www.uestc.edu.cn/">University of Electronic Science and Technology of China</a> in July 2021. I have a broad interest in Natural Language Processing, Large Language Model, and Agent.
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <!--Research Interest-->
+    <div style="clear: both;">
+        <div class="section clearfix">
+            <h2>Research Interest</h2>
+            <div class="paper">
+                My research interest focuses on <strong>LLM</strong> and <strong>Agent</strong>, with an emphasis on
+                <strong>fundamental capabilities (world knowledge & complex reasoning) of LLM</strong> and
+                <strong>agent applications</strong>, specifically:<br><br>
+                <ul>
+                    <li>Enhancing internal reasoning capabilities: Through continue pre-training (CPT), supervised fine-tuning
+                        (SFT), and reinforcement learning (RL) training, expand the knowledge boundaries of LLMs and enhance
+                        the inherent general reasoning abilities of LLMs (such as encyclopedic knowledge, mathematics, and
+                        code).
+                    </li><br>
+                    <li>Enhancing the ability to call external tools: Improve the ability of LLMs to call external tools (such
+                        as code, calculators, and search engines).
+                    </li><br>
+                    <li>Agent applications in vertical fields: Enhance the application of LLM-based agent in vertical scenarios,
+                        such as complex structured data (such as knowledge graphs, databases, Excel spreadsheets, and tables),
+                        general retrieval scenarios (such as AI Searcher, Deep Research), etc.
+                    </li><br>
                 </ul>
+                <alert>
+                    I am currently seeking job opportunities in both academic and industry. I am expected to graduate in July
+                    2026. If you are interested in me, please do not hesitate to contact me via Email.
+                <alert>
             </div>
-        </section>
+        </div>
+    </div>
 
-        <img src="./images/jiangjinhao.jpg" alt="Jinhao Jiang" class="profile-img">
+    <!--News-->
+    <div style="clear: both;">
+        <div class="section">
+            <h2 id="news">News</h2><br>
+                <ul>
+                    <li>[2025-03-07] We release <a href="https://arxiv.org/pdf/2503.05592">R1-Searcher</a>, which is the first technical report to apply the RL of the R1 paradigm to the RAG scenario. It has achieved significant performance improvements across multiple evaluation datasets, marking an important step towards Deep Research!
+                </ul>
 
-        <section>
-            <h2>Education</h2>
-            <ul>
-                <li>Ph.D. student of Artificial Intelligence, Renmin University of China, 2021-2026 (Expected)</li>
-                <li>B.Sc. of Computer Science, University of Electronic Science and Technology of China, 2017-2021</li>
-            </ul>
-        </section>
+            <!-- <details>
+                <summary><span style="color:blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2024]</span></summary>
+                <ul>
+                    <li>2024-12: One paper about LLM evaluation was accepted by <a href="https://aaai.org/conference/aaai/aaai-25/">AAAI 2025</a>; We won the First Price in <a href="https://mp.weixin.qq.com/s/tANdhJhfKtO-ZZtVI2wM6A">Financial GraphRAG Competition</a>.</li>
+                    <li>2024-02: One paper about text simplification was accepted by <a href="https://lrec-coling-2024.org/about-lrec-coling/">COLING 2024</a>.</li>                
+                </ul>
+            </details> -->
 
-        <section>
-            <h2>Experience</h2>
-            <ul>
-                <li>2025/01 - present: seed-ByteDance (字节跳动) LLM Research Intern</li>
-                <li>2024/10 - 2024/12: BAAI (智源研究院) LLM Research Intern</li>
-                <li>2023/07 - 2024/10: Boss Zhipin (BOSS直聘) LLM Research Intern</li>
-            </ul>
-        </section>
+            <!-- <details>
+                <summary><span style="color:blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2023]</span></summary>
+                <ul><br>-->
+                    <!-- <li>2023-12: We won the Best Innovation Award in <a href="https://mp.weixin.qq.com/s/sfJPI5yIIE9igTZlpbU5QQ">Yangtze River Delta Fintech Innovation & Application Global Competition</a>.</li> -->
+                <!-- </ul> -->
+            <!-- </details> -->
+        </div>
+    </div>
 
-        <section>
-            <h2>Selected Publications</h2>
-            <p>Here, I've listed my work as a (co-) first author. For the complete list of my publications, please visit my <a href="https://scholar.google.com/citations?user=TeFKijMAAAAJ&hl=en">Google Scholar</a> profile.</p>
-            <div class="publication">
-                <a href="https://arxiv.org/pdf/2503.05592.pdf"><strong>R1-Searcher: Incentivizing the Search Capability in LLMs via Reinforcement Learning</strong></a>
-                <p>Authors: Huatong Song, Jinhao Jiang, Yingqian Min, etc.</p>
-                <p><em>arXiv</em>, 2025</p>
-                <a href="https://arxiv.org/pdf/2503.05592.pdf">pdf</a> / <a href="https://github.com/RUCAIBox/R1-Searcher">code</a>
-            </div>
-            <!-- Add more publications here -->
-        </section>
+    <!-- Research Highlights
+    <div style="clear: both;">
+        <div class="section">
+            <h2 id="confpapers">Research Highlights (<a href="https://scholar.google.com/citations?user=Q0F92XIAAAAJ&hl=en">[Full List]</a>)</h2>
 
-        <section>
-            <h2>Zhihu Posts</h2>
-            <ul>
-                <li><a href="https://zhuanlan.zhihu.com/p/501680110" target="_blank">ACL 2022 主会长文论文分类整理</a></li>
-                <li><a href="https://zhuanlan.zhihu.com/p/409061361" target="_blank">可能是目前最全面的知识库复杂问答综述解读</a></li>
-                <li><a href="https://zhuanlan.zhihu.com/p/384952066" target="_blank">基于知识图谱的问答系统相关论文分类整理</a></li>
-                <li><a href="javascript:toggle_vis('zhihu-blogs')" style="color:black">show more</a></li>
-                <div id="zhihu-blogs" style="display:none">
-                    <li><a href="https://zhuanlan.zhihu.com/p/354274764" target="_blank">GAN理论推导</a></li>
+
+            <h4><alert>Question Answering</alert></h4>
+            <div class="paper"><img class="paper" src="./resources/paper_icon/naacl_demo_short.gif"
+                title="">
+                <div>We have developed question answering systems under different scenarios. 
+                For Machine Reading Comprehension (MRC), we proposed different methods to improve the accuracy of answering questions over passages [<a href="https://ojs.aaai.org/index.php/AAAI/article/view/6458/6314">AAAI'20</a>; <a href="https://aclanthology.org/2023.findings-acl.391.pdf">ACL'23</a>]. 
+                For Knowledge Graph Question Answering (KGQA), we investegated and improved different modules in the QA framework, which achieve SOTA results in a variety of scenarios (e.g., simple questions [<a href="https://ink.library.smu.edu.sg/cgi/viewcontent.cgi?article=5443&context=sis_research">IJCAI'19</a>], complex questions [<a href="https://arxiv.org/pdf/2101.03737">WSDM'20</a>; <a href="https://aclanthology.org/2020.acl-main.91.pdf">ACL'20</a>; <a href="https://arxiv.org/pdf/2306.06872">ACL'23</a>], conversational questions [<a href="https://aclanthology.org/2021.acl-long.255.pdf">ACL'21</a>]).
+                For Question Answering with Databases, we explored to generate complex questions in a specific domain [<a href="https://arxiv.org/pdf/2310.08395">EMNLP'23</a>; <a href="https://arxiv.org/abs/2402.13125">AAAI'25</a>] and align Large Language Models (LLMs) to a domain-specific database [<a href="https://arxiv.org/pdf/2402.16567">CIKM'24</a>].
+                For Multi-modal Question Answering, we discussed the applications of LLMs and its safety issue [<a href="http://arxiv.org/abs/2311.09050.pdf">MM'23</a>; <a href="https://arxiv.org/pdf/2402.00357">IJCAI'24</a>;<a href="https://arxiv.org/pdf/2311.17600">ECCV'24</a>].<br>
+                
+                There are surveys [<a href="https://arxiv.org/pdf/2108.06688">TKDE'22</a>] you can start with.
+                We have demonstration pages [<a href="http://49.52.27.116:8000/test">Demonstration Page</a> (only works within ECNU)] that you can try on!
                 </div>
-            </ul>
-        </section>
+                <div class="spanner">
+                </div>
+            </div> 
 
-        <section>
-            <h2>Open Source Projects</h2>
-            <ul>
-                <li><a href="https://github.com/RUCAIBox/Slow_Thinking_with_LLMs" target="_blank">O1 Reproduction</a><br>STILL: Slow Thinking with LLMs.</li>
-                <li><a href="https://github.com/RUCAIBox/TextBox" target="_blank">TextBox</a><br>A unified, comprehensive and efficient framework for reproducing and developing text generation algorithms.</li>
-            </ul>
-        </section>
+            <h4><alert>Educational NLP</alert></h4>
+            <div class="paper"><img class="paper" src="./resources/paper_icon/viscgec.gif"
+                title="">
+                <div>We have worked on the educational NLP tasks, such as Math Word Problem (MWP) solving [<a href="https://ojs.aaai.org/index.php/AAAI/article/view/21723">AAAI demo'22</a>; <a href="https://arxiv.org/pdf/2305.04091">ACL'23</a>; <a href="https://arxiv.org/pdf/2310.16535">EMNLP Finding'23</a>], Chinese Spelling Check (CSC) [<a href="https://link.springer.com/chapter/10.1007/978-3-031-44699-3_29">NLPCC'23</a>], Grammatical Error Correction (GEC) [<a href="https://arxiv.org/pdf/2311.04906">CIKM'23</a>;<a href="https://arxiv.org/pdf/2311.04906">COLING'25</a>;<a href="https://arxiv.org/pdf/2311.04906">NAACL'25</a>], Text Simplification [<a href="https://arxiv.org/abs/2402.14704">COLING'24</a>], and Essay Scoring [<a href="https://kclpure.kcl.ac.uk/ws/portalfiles/portal/266055350/AIED_2024_Chen_et_al.pdf">AIED'24</a>;<a href="https://arxiv.org/pdf/2407.12857">EMNLP Finding'24</a>].<br>
+                
+                There are surveys [<a href="https://arxiv.org/pdf/2401.07518">ArXiv</a>] you can start with.
+                </div>
+                <div class="spanner">
+                </div>
+            </div>            
+        </div>
+    </div>
+    <br> -->
 
-        <section>
-            <h2>Professional Services</h2>
+    <div style="clear: both;">
+        <div class="section clearfix">
+            <h2>Experience</h2><br>
             <ul>
-                <li>Reviewer
-                    <ul>
-                        <li>Journal: TALLIP, Computational Intelligence, Information Retrieval Journal</li>
-                        <li>Conference: ICLR, NIPS, ACL, EMNLP</li>
-                    </ul>
+                <li>2025/01 - present: seed-ByteDance (字节跳动) LLM Research Intern
+                </li>
+                <li>2024/10 - 2024/12: BAAI (智源研究院) LLM Research Intern
+                </li>
+                <li>2023/07 - 2024/10: Boss Zhipin (BOSS直聘) LLM Research Intern
                 </li>
             </ul>
-        </section>
+        </div>
+    </div>
 
-        <section>
-            <h2>Selected Awards and Honors</h2>
+    
+    <!--Research Highlights-->
+    <div style="clear: both;">
+        <div class="section">
+            <h2 id="confpapers">Selected Publications</h2>
+            (* indicates equal contribution, &dagger; indicates corresponding author)<br><br>
+            Here, I've listed my work as a (co-) first author. For the complete list of my publications, please visit my <a href="https://scholar.google.com/citations?user=TeFKijMAAAAJ&hl=en">Google Scholar</a> profile.<br><br>
+            <div class="paper">
             <ul>
-                <li>2021 Outstanding Graduates of Sichuan Province (winning ratio 3.7%)</li>
-                <li>2020 China National Scholarship (top 1.5%)</li>
-                <li>2019 China National Scholarship (top 1.5%)</li>
-                <li>2019 Meritorious Winner in Mathematical Contest In Modeling</li>
+                <li>
+                <a href="https://arxiv.org/pdf/2503.05592.pdf">R1-Searcher: Incentivizing the Search Capability in LLMs via Reinforcement Learning</a><br><br>
+                Huatong Song*, <strong>Jinhao Jiang</strong>*, Yingqian Min, Jie Chen, Zhipeng Chen, Wayne Xin Zhao&dagger;, Lei Fang, Ji-Rong Wen<br><br>
+                <i>Technical Report, 2025</i> <br>
+                <br>
+                </li>
             </ul>
-        </section>
-    </main>
 
-    <footer>
-        <p>Copyright 2021. All Rights Reserved by Jinhao Jiang.</p>
-    </footer>
+            <ul>
+                <li>
+                <a href="https://arxiv.org/pdf/2412.09413?.pdf">Imitate, explore, and self-improve: A reproduction report on slow-thinking reasoning systems</a><br><br>
+                Yingqian Min*, Zhipeng Chen*, <strong>Jinhao Jiang</strong>*, Jie Chen, Jia Deng, Yiwen Hu, Yiru Tang, Jiapeng Wang, Xiaoxue Cheng, Huatong Song, Wayne Xin Zhao&dagger;, Zheng Liu, Zhongyuan Wang, Ji-Rong Wen<br><br>
+                <i>Technical Report, 2025</i> <br>
+                <br>
+                </li>
+            </ul>
 
-    <script src="scripts.js"></script>
+
+            <ul>
+                <li>
+                <a href="https://arxiv.org/pdf/2411.11694.pdf">Enhancing LLM Reasoning with Reward-guided Tree Search</a><br><br>
+                <strong>Jinhao Jiang</strong>*, Zhipeng Chen*, Yingqian Min*, Jie Chen, Xiaoxue Cheng, Jiapeng Wang, Yiru Tang, Haoxiang Sun, Jia Deng, Wayne Xin Zhao&dagger;, Zheng Liu, Dong Yan, Jian Xie, Zhongyuan Wang, Ji-Rong Wen<br><br>
+                <i>Technical Report, 2024</i> <br>
+                <br>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                <a href="https://arxiv.org/pdf/2412.09413?.pdf">Mix-CPT: A Domain Adaptation Framework via Decoupling Knowledge Learning and Format Alignment</a><br><br>
+                <strong>Jinhao Jiang</strong>*, Junyi Li*, Wayne Xin Zhao&dagger;, Yang Song, Tao Zhang, Ji-Rong Wen<br><br>
+                <i>International Conference on Learning Representations (ICLR), 2025</i> <br>
+                <br>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                <a href="https://arxiv.org/pdf/2412.12881.pdf">RAG-Star: Enhancing Deliberative Reasoning with Retrieval Augmented Verification and Refinement</a><br><br>
+                <strong>Jinhao Jiang</strong>*, Jiayi Chen*, Junyi Li*, Ruiyang Ren, Shijie Wang, Wayne Xin Zhao&dagger;, Yang Song, Tao Zhang<br><br>
+                <i>The North American Chapter of the Association for Computational Linguistics (NAACL), 2025</i> <br>
+                <br>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                <a href="https://arxiv.org/pdf/2402.11163.pdf">KG-Agent: An Efficient Autonomous Agent Framework for Complex Reasoning over Knowledge Graph</a><br><br>
+                <strong>Jinhao Jiang</strong>*, Kun Zhou*, Wayne Xin Zhao&dagger;, Yang Song, Chen Zhu, Hengshu Zhu, Ji-Rong Wen<br><br>
+                <i>arXiv, 2024</i> <br>
+                <br>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                <a href="https://arxiv.org/pdf/2305.09645.pdf">StructGPT: A General Framework for Large Language Model to Reason over Structured Data</a><br><br>
+                <strong>Jinhao Jiang</strong>*, Kun Zhou*, Zican Dong, Keming Ye, Wayne Xin Zhao&dagger;, Ji-Rong Wen<br><br>
+                <i>The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP), 2023</i> <br>
+                <br>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                <a href="https://arxiv.org/pdf/2305.09645.pdf">ReasoningLM: Enabling Structural Subgraph Reasoning in Pre-trained Language Models for Question Answering over Knowledge Graph</a><br><br>
+                <strong>Jinhao Jiang</strong>, Kun Zhou, Wayne Xin Zhao&dagger;, Yaliang Li, Ji-Rong Wen<br><br>
+                <i>The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP), 2023</i> <br>
+                <br>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                <a href="https://arxiv.org/abs/2212.00959">UniKGQA: Unified Retrieval and Reasoning for Solving Multi-hop Question Answering Over Knowledge Graph</a><br><br>
+                <strong>Jinhao Jiang</strong>*, Kun Zhou*, Wayne Xin Zhao&dagger;, Ji-Rong Wen<br><br>
+                <i>International Conference on Learning Representations (ICLR), 2023</i><br>
+                <br>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                <a href="https://arxiv.org/pdf/2205.01841.pdf">Great Truths are Always Simple: A Rather Simple Knowledge Encoder for Enhancing the Commonsense Reasoning Capacity of Pre-Trained Models</a><br><br>
+                <strong>Jinhao Jiang</strong>*, Kun Zhou*, Wayne Xin Zhao&dagger;, Ji-Rong Wen<br><br>
+                <i>The North American Chapter of the Association for Computational Linguistics (NAACL-Findings), 2022</i><br>
+                <br>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                <a href="https://arxiv.org/pdf/2108.06688.pdf">Complex Knowledge Base Question Answering: A Survey</a><br><br>
+                Yunshi Lan*, Gaole He*, <strong>Jinhao Jiang</strong>, Jing Jiang, Wayne Xin Zhao&dagger;, Ji-Rong Wen<br><br>
+                <i>IEEE Transactions on Knowledge and Data Engineering (TKDE), 2022</i> <br>
+                <br>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <br>
+
+    <!--Grants-->
+    <div style="clear: both;">
+        <div class="section">
+            <h2>Grants
+            </h2>
+            <div class="paper">
+                <li>2021 Outstanding Graduates of Sichuan Province (winning ratio 3.7%), Education Department of Sichuan.</li>
+                <li>2020 China National Scholarship (top 1.5%), Ministry of Education of the People's Republic of China.</li>
+                <li>2019 China National Scholarship (top 1.5%), Ministry of Education of the People's Republic of China.</li>
+                <!-- <li>2019 Meritorious Winner (winning ratio 7.09%) in Mathematical Contest In Modeling, the COMAP of American.</li> -->
+                <div class="spanner"></div>
+                <!-- <br> -->
+            </div>
+        </div>
+    </div>
+
+    <!--Teaching-->
+    <!-- <div style="clear: both;">
+        <div class="section">
+            <h2>Teaching
+            </h2>
+            <div class="paper">
+                <ul>
+                    <li>
+                        Deep Learning<br>
+                        for both undergraduate students and postgraduate students<br>
+                        2024 Spring Deep Learning (Undergraduate)<br>
+                        2025 Spring <a href="./resources/html/deep-learning2024-2025.html">Deep Learning (Undergraduate)</a> 
+                    </li>
+                </ul>
+                <div class="spanner"></div>
+                <br>
+            </div>
+        </div>
+    </div> -->
+
+    <!--Professional Service-->
+    <div style="clear: both;">
+        <div class="section">
+            <h2>Professional Service
+            </h2>
+            <div class="paper">
+                <ul>
+                    <li>Journal: TALLIP, Computational Intelligence, Information Retrieval Journa</li>
+                    <li>Conference: ICLR, NIPS, ACL, EMNLP</li>
+                </ul>
+                <div class="spanner"></div>
+                <!-- <br> -->
+            </div>
+        </div>
+    </div>
+
+    <!--Invited Talk-->
+    <!-- <div style="clear: both;">
+        <div class="section">
+            <h2>Invited Talk
+            </h2>
+            <div class="paper">
+                <ul>
+                    <li>
+                        Invited Talk on Stuctured Data Management via Large Language Models.<br>
+                        Xi'an, <a href="http://chinasoft.ccf.org.cn/program/academic">2024 CCF ChinaSoft</a> (2024.11)<br>
+                    </li>
+                    <li>
+                        Invited Talk on Applications of Large Language Models on Finance Domain.<br>
+                        ECNU (2023.12)<br>
+                    </li>
+                    <li>
+                        Invited Talk on Knowledge-based Question Answering with Large Language Models. <a href="./resources/slides/nust-pre.pdf">[Slides]</a> <br>
+                        NUST, NLP Group (2023.11)<br>
+                        SCU, NLP Group (2023.12)
+                    </li>
+                </ul>
+                <div class="spanner"></div>
+                <br>
+            </div>
+        </div>
+    </div> -->
+
+    <!--Mentoring-->
+    <!-- <div style="clear: both;">
+        <div class="section">
+            <h2>Mentoring Experience</h2>
+            <div class="paper">
+                <h4>PhD students</h4>
+                <ul>
+                    <li>
+                        Yuanyuan Liang 
+                    </li>
+                    <li>
+                        Wenbiao Tao 
+                    </li>
+                    <li>
+                        Yuan Liu 
+                    </li>
+                </ul>
+                <h4>Master students</h4>
+                <ul>
+                    <li>
+                        Zeyu Sheng (ByteDance, Shanghai); Xuyao Hu (Xiecheng, Shanghai); Yuze Huang (Xiecheng, Shanghai); Yuxuan Huang (Shanghai Stock Exchange, Shanghai)
+                    </li>
+                    <li>
+                        Keren Tan (Shanghai excellent graduate student 2024) (Guotai Junan Securities, Shanghai); Jiani Wang (Midea, Shanghai); Lei Pan(AISPEECH, Shanghai)
+                    </li>
+                    <li>
+                        Xin Liu (PhD candidate, MBZUAI, Abu Dhabi); Hanyue Du; Alex Xiang Li (BiliBili, Shanghai)
+                    </li>
+                    <li>
+                        Hanlun Zhu; Yike Zhao; Xiaoman Wang
+                    </li>
+                    <li>
+                        Qinwen Chen; Xinyuan Li; Qianyu Wang
+                    </li>
+                </ul>
+                <h4>Undergraduate students</h4>
+                <ul>
+                    <li>
+                        Qingyuan Tian (CIKM 2023; EMNLP Finding 2023) (PhD candidate, SJTU)<br>
+                    </li>
+                </ul>
+                <div class="spanner"></div>
+                <br>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>

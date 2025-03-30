@@ -72,3 +72,51 @@ footer {
 .updates-container li {
     margin-bottom: 5px;
 }
+
+全局样式
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* 清除浮动 */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* 章节样式 */
+.section {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* 标题样式 */
+.section h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+/* 论文内容样式 */
+.paper {
+    margin-left: 20px;
+}
+
+/* 列表项样式 */
+.paper li {
+    margin-bottom: 10px;
+}
+
+/* 提醒样式 */
+.alert {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
