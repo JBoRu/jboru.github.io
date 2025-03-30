@@ -1,0 +1,74 @@
+body {
+    font-family: 'TeXGyrePagella', 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #e37222;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #07889b;
+    text-decoration: none;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.profile-img {
+    width: 80%;
+    display: block;
+    margin: 20px auto;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f4f4f4;
+}
+
+.publication {
+    margin-bottom: 20px;
+}
+
+.updates-container {
+    max-height: 200px; /* Adjust height as needed */
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.updates-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.updates-container li {
+    margin-bottom: 5px;
+}
