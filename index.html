@@ -711,24 +711,23 @@
         const zhElements = document.querySelectorAll('.zh');
         const langSwitch = document.getElementById('lang-switch');
         
-        // Toggle visibility
+        // Check current language and switch
+        const isCurrentlyEnglish = langSwitch.textContent === '中文';
+        
+        // Set visibility based on selected language
         enElements.forEach(el => {
-            el.style.display = el.style.display === 'none' ? 'block' : 'none';
+            el.style.display = isCurrentlyEnglish ? 'none' : 'block';
         });
         
         zhElements.forEach(el => {
-            el.style.display = el.style.display === 'none' ? 'block' : 'none';
+            el.style.display = isCurrentlyEnglish ? 'block' : 'none';
         });
         
         // Toggle button text
-        langSwitch.textContent = langSwitch.textContent === '中文' ? 'English' : '中文';
+        langSwitch.textContent = isCurrentlyEnglish ? 'English' : '中文';
         
         // Remember language preference
-        if (langSwitch.textContent === '中文') {
-            localStorage.setItem('language', 'en');
-        } else {
-            localStorage.setItem('language', 'zh');
-        }
+        localStorage.setItem('language', isCurrentlyEnglish ? 'zh' : 'en');
     }
     
     // Initialize language display on page load
