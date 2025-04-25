@@ -254,7 +254,7 @@
     <!--photo and basic information-->
     <div style="margin-bottom: 1em; border: 1px solid #ddd; background-color: #fff; padding: 1em; height: 150px;">
         <!-- Language switch button -->
-        <button id="lang-switch" class="lang-switch">中文</button>
+        <button id="lang-switch" class="lang-switch" onclick="toggleLanguage()">中文</button>
         <div style="margin: 0px auto; width: 100%;">
             <img title="jinhao" style="float: left; padding-left: .01em; height: 120px;"
                  src="images/jiangjinhao.jpg">
@@ -588,25 +588,6 @@
         </div>
     </div>
 
-    <!--Teaching-->
-    <!-- <div style="clear: both;">
-        <div class="section">
-            <h2>Teaching
-            </h2>
-            <div class="paper">
-                <ul>
-                    <li>
-                        Deep Learning<br>
-                        for both undergraduate students and postgraduate students<br>
-                        2024 Spring Deep Learning (Undergraduate)<br>
-                        2025 Spring <a href="./resources/html/deep-learning2024-2025.html">Deep Learning (Undergraduate)</a> 
-                    </li>
-                </ul>
-                <div class="spanner"></div>
-                <br>
-            </div>
-        </div>
-    </div> -->
 
     <!--Professional Service-->
     <div style="clear: both;">
@@ -626,81 +607,6 @@
             </div>
         </div>
     </div>
-
-    <!--Invited Talk-->
-    <!-- <div style="clear: both;">
-        <div class="section">
-            <h2>Invited Talk
-            </h2>
-            <div class="paper">
-                <ul>
-                    <li>
-                        Invited Talk on Stuctured Data Management via Large Language Models.<br>
-                        Xi'an, <a href="http://chinasoft.ccf.org.cn/program/academic">2024 CCF ChinaSoft</a> (2024.11)<br>
-                    </li>
-                    <li>
-                        Invited Talk on Applications of Large Language Models on Finance Domain.<br>
-                        ECNU (2023.12)<br>
-                    </li>
-                    <li>
-                        Invited Talk on Knowledge-based Question Answering with Large Language Models. <a href="./resources/slides/nust-pre.pdf">[Slides]</a> <br>
-                        NUST, NLP Group (2023.11)<br>
-                        SCU, NLP Group (2023.12)
-                    </li>
-                </ul>
-                <div class="spanner"></div>
-                <br>
-            </div>
-        </div>
-    </div> -->
-
-    <!--Mentoring-->
-    <!-- <div style="clear: both;">
-        <div class="section">
-            <h2>Mentoring Experience</h2>
-            <div class="paper">
-                <h4>PhD students</h4>
-                <ul>
-                    <li>
-                        Yuanyuan Liang 
-                    </li>
-                    <li>
-                        Wenbiao Tao 
-                    </li>
-                    <li>
-                        Yuan Liu 
-                    </li>
-                </ul>
-                <h4>Master students</h4>
-                <ul>
-                    <li>
-                        Zeyu Sheng (ByteDance, Shanghai); Xuyao Hu (Xiecheng, Shanghai); Yuze Huang (Xiecheng, Shanghai); Yuxuan Huang (Shanghai Stock Exchange, Shanghai)
-                    </li>
-                    <li>
-                        Keren Tan (Shanghai excellent graduate student 2024) (Guotai Junan Securities, Shanghai); Jiani Wang (Midea, Shanghai); Lei Pan(AISPEECH, Shanghai)
-                    </li>
-                    <li>
-                        Xin Liu (PhD candidate, MBZUAI, Abu Dhabi); Hanyue Du; Alex Xiang Li (BiliBili, Shanghai)
-                    </li>
-                    <li>
-                        Hanlun Zhu; Yike Zhao; Xiaoman Wang
-                    </li>
-                    <li>
-                        Qinwen Chen; Xinyuan Li; Qianyu Wang
-                    </li>
-                </ul>
-                <h4>Undergraduate students</h4>
-                <ul>
-                    <li>
-                        Qingyuan Tian (CIKM 2023; EMNLP Finding 2023) (PhD candidate, SJTU)<br>
-                    </li>
-                </ul>
-                <div class="spanner"></div>
-                <br>
-            </div>
-        </div>
-    </div>
-
 </body>
 
 <script>
@@ -728,36 +634,20 @@
         
         // Remember language preference
         localStorage.setItem('language', isCurrentlyEnglish ? 'zh' : 'en');
+        
+        // Log for debugging
+        console.log('Language toggled to: ' + (isCurrentlyEnglish ? 'Chinese' : 'English'));
+        return false; // Prevent default action
     }
     
     // Initialize language display on page load
     document.addEventListener('DOMContentLoaded', function() {
-        // Set initial display
-        const enElements = document.querySelectorAll('.en');
-        const zhElements = document.querySelectorAll('.zh');
-        const langSwitch = document.getElementById('lang-switch');
-        
-        enElements.forEach(el => {
-            el.style.display = 'block';
-        });
-        
-        zhElements.forEach(el => {
-            el.style.display = 'none';
-        });
-        
-        // Add event listener using proper method for both desktop and mobile
-        if (langSwitch) {
-            langSwitch.addEventListener('click', toggleLanguage);
-            langSwitch.addEventListener('touchend', function(e) {
-                e.preventDefault();
-                toggleLanguage();
-            });
-        }
-        
         // Check for saved language preference
         const savedLanguage = localStorage.getItem('language');
+        
         if (savedLanguage === 'zh') {
-            toggleLanguage();
+            // Simulate a click on the language button to switch to Chinese
+            document.getElementById('lang-switch').click();
         }
     });
 </script>
