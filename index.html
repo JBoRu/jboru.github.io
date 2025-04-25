@@ -201,6 +201,32 @@
         div.paper pre {
             font-size: 0.9em;
         }
+
+        /* Language switcher styles */
+        .lang-switch {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 5px 10px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        .lang-switch:hover {
+            background: #f0f0f0;
+        }
+        
+        /* Content language classes */
+        .en {
+            display: block;
+        }
+        
+        .zh {
+            display: none;
+        }
     </style>
 
 
@@ -226,16 +252,23 @@
 <body>
 
     <!--photo and basic information-->
-    <div style="margin-bottom: 1em; border: 1px solid #ddd; background-color: #fff; padding: 1em; height: 120px;">
+    <div style="margin-bottom: 1em; border: 1px solid #ddd; background-color: #fff; padding: 1em; height: 150px;">
+        <!-- Language switch button -->
+        <div id="lang-switch" class="lang-switch" onclick="toggleLanguage()">中文</div>
         <div style="margin: 0px auto; width: 100%;">
             <img title="jinhao" style="float: left; padding-left: .01em; height: 120px;"
                  src="images/jiangjinhao.jpg">
-            <div style="padding-left: 12em; vertical-align: top; height: 120px;">
-                <span style="line-height: 150%; font-size: 20pt;">Jinhao Jiang (蒋锦昊)</span><br>
-                <span><a href="http://ai.ruc.edu.cn/">Gaoling School of Artificial Intelligence</a>, <a
-                        href="https://en.ruc.edu.cn/">Renmin University of China(RUC)</a></span><br><br>
-                <span><strong>Address</strong>: No.59 Zhongguancun Street, Haidian District Beijing, 100872, P.R. China</span><br>
-                <span><strong>Email</strong>: jiangjinhao [at] ruc.edu.cn</span>
+            <div style="padding-left: 12em; vertical-align: top; height: 150px;">
+                <span style="line-height: 150%; font-size: 20pt;" class="en">Jinhao Jiang (蒋锦昊)</span>
+                <span style="line-height: 150%; font-size: 20pt;" class="zh">蒋锦昊 (Jinhao Jiang)</span><br>
+                <span class="en"><a href="http://ai.ruc.edu.cn/">Gaoling School of Artificial Intelligence</a>, <a
+                        href="https://en.ruc.edu.cn/">Renmin University of China(RUC)</a></span>
+                <span class="zh"><a href="http://ai.ruc.edu.cn/">中国人民大学</a>, <a
+                        href="https://en.ruc.edu.cn/">高瓴人工智能学院</a></span><br>
+                <span class="en"><strong>Address</strong>: No.59 Zhongguancun Street, Haidian District Beijing, 100872, P.R. China</span>
+                <span class="zh"><strong>地址</strong>: 中国北京市海淀区中关村大街59号，100872</span><br>
+                <span class="en"><strong>Email</strong>: jiangjinhao [at] ruc.edu.cn</span>
+                <span class="zh"><strong>邮箱</strong>: jiangjinhao [at] ruc.edu.cn</span>
             </div>
         </div>
     </div>
@@ -245,12 +278,16 @@
     <!--biography-->
     <div style="clear: both;">
         <div class="section">
-            <h2>About Me <a href="https://github.com/JBoRu">[GitHub]</a>
+            <h2 class="en">About Me <a href="https://github.com/JBoRu">[GitHub]</a>
+                <a href="https://scholar.google.com/citations?user=TeFKijMAAAAJ&hl=en">[Google Scholar]</a>
+            </h2>
+            <h2 class="zh">关于我 <a href="https://github.com/JBoRu">[GitHub]</a>
                 <a href="https://scholar.google.com/citations?user=TeFKijMAAAAJ&hl=en">[Google Scholar]</a>
             </h2>
             <div class="paper">
-                I am a fourth-year Ph.D. student (expected to graduate in June 2026) supervised by <a href="http://playbigdata.ruc.edu.cn/batmanfly/">Prof. Xin Zhao</a> from <a href="http://ai.ruc.edu.cn/english/index.htm">GSAI</a>, <a href="https://ruc.edu.cn">Renmin University of China</a>. Prior to this, I obtained a bachelor's degree from the <a href="https://www.uestc.edu.cn/">University of Electronic Science and Technology of China</a> in July 2021. I have a broad interest in Natural Language Processing, Large Language Model, and Agent.
-                <br>
+                <p class="en">I am a fourth-year Ph.D. student (expected to graduate in June 2026) supervised by <a href="http://playbigdata.ruc.edu.cn/batmanfly/">Prof. Xin Zhao</a> from <a href="http://ai.ruc.edu.cn/english/index.htm">GSAI</a>, <a href="https://ruc.edu.cn">Renmin University of China</a>. Prior to this, I obtained a bachelor's degree from the <a href="https://www.uestc.edu.cn/">University of Electronic Science and Technology of China</a> in July 2021. I have a broad interest in Natural Language Processing, Large Language Model, and Agent.</p>
+                
+                <p class="zh">我是中国人民大学高瓴人工智能学院四年级博士生（预计2026年6月毕业），导师为<a href="http://playbigdata.ruc.edu.cn/batmanfly/">赵鑫教授</a>。此前，我于2021年7月获得<a href="https://www.uestc.edu.cn/">电子科技大学</a>学士学位。我对自然语言处理、大语言模型和智能体有广泛的研究兴趣。</p>
             </div>
         </div>
     </div>
@@ -258,12 +295,18 @@
     <!--Research Interest-->
     <div style="clear: both;">
         <div class="section clearfix">
-            <h2>Research Interest</h2>
+            <h2 class="en">Research Interest</h2>
+            <h2 class="zh">研究兴趣</h2>
             <div class="paper">
-                My research interest focuses on <strong>LLM</strong> and <strong>Agent</strong>, with an emphasis on
+                <p class="en">My research interest focuses on <strong>LLM</strong> and <strong>Agent</strong>, with an emphasis on
                 <strong>fundamental capabilities (world knowledge & complex reasoning) of LLM</strong> and
-                <strong>agent applications</strong>, specifically:<br><br>
-                <ul>
+                <strong>agent applications</strong>, specifically:</p>
+                
+                <p class="zh">我的研究兴趣集中在<strong>大语言模型（LLM）</strong>和<strong>智能体（Agent）</strong>，特别关注
+                <strong>大语言模型的基础能力（世界知识和复杂推理）</strong>以及
+                <strong>智能体应用</strong>，具体包括：</p><br>
+            
+                <ul class="en">
                     <li>Enhancing internal reasoning capabilities: Through continue pre-training (CPT), supervised fine-tuning
                         (SFT), and reinforcement learning (RL) training, expand the knowledge boundaries of LLMs and enhance
                         the inherent general reasoning abilities of LLMs (such as encyclopedic knowledge, mathematics, and
@@ -277,10 +320,24 @@
                         general retrieval scenarios (such as AI Searcher, Deep Research), etc.
                     </li><br>
                 </ul>
-                <alert>
+                
+                <ul class="zh">
+                    <li>增强内部推理能力：通过持续预训练（CPT）、监督微调（SFT）和强化学习（RL）训练，拓展大语言模型的知识边界，提升大语言模型固有的通用推理能力（如百科知识、数学和代码）。
+                    </li><br>
+                    <li>增强调用外部工具的能力：提高大语言模型调用外部工具（如代码、计算器和搜索引擎）的能力。
+                    </li><br>
+                    <li>垂直领域的智能体应用：增强基于大语言模型的智能体在垂直场景中的应用，如复杂结构化数据（如知识图谱、数据库、Excel电子表格和表格），通用检索场景（如AI搜索器、深度研究）等。
+                    </li><br>
+                </ul>
+                
+                <alert class="en">
                     I am currently seeking job opportunities in both academic and industry. I am expected to graduate in July
                     2026. If you are interested in me, please do not hesitate to contact me via Email.
-                <alert>
+                </alert>
+                
+                <alert class="zh">
+                    我目前正在寻找学术界和工业界的工作机会。我预计将于2026年7月毕业。如果您对我感兴趣，请通过邮件联系我。
+                </alert>
             </div>
         </div>
     </div>
@@ -288,10 +345,16 @@
     <!--News-->
     <div style="clear: both;">
         <div class="section">
-            <h2 id="news">News</h2><br>
-                <ul>
+            <h2 id="news" class="en">News</h2>
+            <h2 id="news" class="zh">新闻</h2><br>
+                <ul class="en">
                     <li>[2025-04-22] I'll present my work <a href="https://openreview.net/pdf?id=h1XoHOd19I">"Mix-CPT: A Domain Adaptation Framework via Decoupling Knowledge Learning and Format Alignment"</a> poster at ICLR-2025 in Singapore. It's on April 26th, from 15:00 - 17:30 in Hall 3 + Hall 2B. Welcome to have a chat!
                     <li>[2025-03-07] We release <a href="https://arxiv.org/pdf/2503.05592">R1-Searcher</a>, which is the first technical report to apply the RL of the R1 paradigm to the RAG scenario. It has achieved significant performance improvements across multiple evaluation datasets, marking an important step towards Deep Research!
+                </ul>
+                
+                <ul class="zh">
+                    <li>[2025-04-22] 我将在新加坡的ICLR-2025会议上展示我的工作 <a href="https://openreview.net/pdf?id=h1XoHOd19I">"Mix-CPT: 通过解耦知识学习和格式对齐的领域适应框架"</a>。展示时间是4月26日下午15:00-17:30，地点在3号厅+2B厅。欢迎来交流！
+                    <li>[2025-03-07] 我们发布了<a href="https://arxiv.org/pdf/2503.05592">R1-Searcher</a>，这是首个将R1范式的强化学习应用于RAG场景的技术报告。它在多个评估数据集上取得了显著的性能提升，标志着向深度研究迈出了重要一步！
                 </ul>
 
             <!-- <details>
@@ -349,13 +412,22 @@
 
     <div style="clear: both;">
         <div class="section clearfix">
-            <h2>Experience</h2><br>
-            <ul>
+            <h2 class="en">Experience</h2>
+            <h2 class="zh">工作经历</h2><br>
+            <ul class="en">
                 <li>2025/01 - present: ByteDance-Seed (字节跳动-Seed) LLM Research Intern
                 </li>
                 <li>2024/10 - 2024/12: BAAI (智源研究院) LLM Research Intern
                 </li>
                 <li>2023/07 - 2024/10: Boss Zhipin (BOSS直聘) LLM Research Intern
+                </li>
+            </ul>
+            <ul class="zh">
+                <li>2025/01 - 至今: 字节跳动-Seed 大语言模型研究实习生
+                </li>
+                <li>2024/10 - 2024/12: 智源研究院 大语言模型研究实习生
+                </li>
+                <li>2023/07 - 2024/10: BOSS直聘 大语言模型研究实习生
                 </li>
             </ul>
         </div>
@@ -365,9 +437,13 @@
     <!--Research Highlights-->
     <div style="clear: both;">
         <div class="section">
-            <h2 id="confpapers">Selected Publications</h2>
-            (* indicates equal contribution, &dagger; indicates corresponding author)<br><br>
-            Here, I've listed my work as a (co-) first author. For the complete list of my publications, please visit my <a href="https://scholar.google.com/citations?user=TeFKijMAAAAJ&hl=en">Google Scholar</a> profile.<br><br>
+            <h2 id="confpapers" class="en">Selected Publications</h2>
+            <h2 id="confpapers" class="zh">精选论文</h2>
+            <div class="en">(* indicates equal contribution, &dagger; indicates corresponding author)</div>
+            <div class="zh">(* 表示共同一作, &dagger; 表示通讯作者)</div><br><br>
+            <div class="en">Here, I've listed my work as a (co-) first author. For the complete list of my publications, please visit my <a href="https://scholar.google.com/citations?user=TeFKijMAAAAJ&hl=en">Google Scholar</a> profile.</div>
+            <div class="zh">这里列出了我作为（共同）第一作者的工作。有关我发表的完整论文列表，请访问我的<a href="https://scholar.google.com/citations?user=TeFKijMAAAAJ&hl=en">谷歌学术</a>主页。</div><br><br>
+
             <div class="paper">
             <ul>
                 <li>
@@ -494,15 +570,20 @@
     <!--Grants-->
     <div style="clear: both;">
         <div class="section">
-            <h2>Grants
-            </h2>
+            <h2 class="en">Grants</h2>
+            <h2 class="zh">奖项</h2>
             <div class="paper">
-                <li>2021 Outstanding Graduates of Sichuan Province (winning ratio 3.7%), Education Department of Sichuan.</li>
-                <li>2020 China National Scholarship (top 1.5%), Ministry of Education of the People's Republic of China.</li>
-                <li>2019 China National Scholarship (top 1.5%), Ministry of Education of the People's Republic of China.</li>
-                <!-- <li>2019 Meritorious Winner (winning ratio 7.09%) in Mathematical Contest In Modeling, the COMAP of American.</li> -->
+                <ul class="en">
+                    <li>2021 Outstanding Graduates of Sichuan Province (winning ratio 3.7%), Education Department of Sichuan.</li>
+                    <li>2020 China National Scholarship (top 1.5%), Ministry of Education of the People's Republic of China.</li>
+                    <li>2019 China National Scholarship (top 1.5%), Ministry of Education of the People's Republic of China.</li>
+                </ul>
+                <ul class="zh">
+                    <li>2021 四川省优秀毕业生（获奖比例3.7%），四川省教育厅。</li>
+                    <li>2020 国家奖学金（前1.5%），中华人民共和国教育部。</li>
+                    <li>2019 国家奖学金（前1.5%），中华人民共和国教育部。</li>
+                </ul>
                 <div class="spanner"></div>
-                <!-- <br> -->
             </div>
         </div>
     </div>
@@ -530,15 +611,18 @@
     <!--Professional Service-->
     <div style="clear: both;">
         <div class="section">
-            <h2>Professional Service
-            </h2>
+            <h2 class="en">Professional Service</h2>
+            <h2 class="zh">学术服务</h2>
             <div class="paper">
-                <ul>
+                <ul class="en">
                     <li>Journal: TALLIP, Computational Intelligence, Information Retrieval Journa</li>
                     <li>Conference: ICLR, NIPS, ACL, EMNLP</li>
                 </ul>
+                <ul class="zh">
+                    <li>期刊: TALLIP, Computational Intelligence, Information Retrieval Journal</li>
+                    <li>会议: ICLR, NIPS, ACL, EMNLP</li>
+                </ul>
                 <div class="spanner"></div>
-                <!-- <br> -->
             </div>
         </div>
     </div>
@@ -618,5 +702,55 @@
     </div>
 
 </body>
+
+<script>
+    // Language toggle function
+    function toggleLanguage() {
+        // Get all elements with language classes
+        const enElements = document.querySelectorAll('.en');
+        const zhElements = document.querySelectorAll('.zh');
+        const langSwitch = document.getElementById('lang-switch');
+        
+        // Toggle visibility
+        enElements.forEach(el => {
+            el.style.display = el.style.display === 'none' ? 'block' : 'none';
+        });
+        
+        zhElements.forEach(el => {
+            el.style.display = el.style.display === 'none' ? 'block' : 'none';
+        });
+        
+        // Toggle button text
+        langSwitch.textContent = langSwitch.textContent === '中文' ? 'English' : '中文';
+        
+        // Remember language preference
+        if (langSwitch.textContent === '中文') {
+            localStorage.setItem('language', 'en');
+        } else {
+            localStorage.setItem('language', 'zh');
+        }
+    }
+    
+    // Initialize language display on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        // Set initial display
+        const enElements = document.querySelectorAll('.en');
+        const zhElements = document.querySelectorAll('.zh');
+        
+        enElements.forEach(el => {
+            el.style.display = 'block';
+        });
+        
+        zhElements.forEach(el => {
+            el.style.display = 'none';
+        });
+        
+        // Check for saved language preference
+        const savedLanguage = localStorage.getItem('language');
+        if (savedLanguage === 'zh') {
+            toggleLanguage();
+        }
+    });
+</script>
 
 </html>
