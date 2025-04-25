@@ -254,7 +254,7 @@
     <!--photo and basic information-->
     <div style="margin-bottom: 1em; border: 1px solid #ddd; background-color: #fff; padding: 1em; height: 150px;">
         <!-- Language switch button -->
-        <div id="lang-switch" class="lang-switch" onclick="toggleLanguage()">中文</div>
+        <button id="lang-switch" class="lang-switch">中文</button>
         <div style="margin: 0px auto; width: 100%;">
             <img title="jinhao" style="float: left; padding-left: .01em; height: 120px;"
                  src="images/jiangjinhao.jpg">
@@ -736,6 +736,7 @@
         // Set initial display
         const enElements = document.querySelectorAll('.en');
         const zhElements = document.querySelectorAll('.zh');
+        const langSwitch = document.getElementById('lang-switch');
         
         enElements.forEach(el => {
             el.style.display = 'block';
@@ -744,6 +745,15 @@
         zhElements.forEach(el => {
             el.style.display = 'none';
         });
+        
+        // Add event listener using proper method for both desktop and mobile
+        if (langSwitch) {
+            langSwitch.addEventListener('click', toggleLanguage);
+            langSwitch.addEventListener('touchend', function(e) {
+                e.preventDefault();
+                toggleLanguage();
+            });
+        }
         
         // Check for saved language preference
         const savedLanguage = localStorage.getItem('language');
